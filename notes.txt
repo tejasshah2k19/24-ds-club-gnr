@@ -1,0 +1,153 @@
+DS -> 
+
+23,34,454,56,56,6,76,767 
+
+sort -> code -> algo -> asc order -> 
+
+logic -> 
+
+
+
+*1) time complexity --> execution time taken by the program 
+2) space complexity  --> space taken by the program 
+
+
+
+addition -> 2  3 -> 5 -> 2 second 
+
+
+50k -> 40second -> 
+
+
+ALGO -> DS 
+
+
+gun rifel machine gun , bazooka 
+
+ahmedabad -> rifel , gun
+gandhinagar -> machine gun 
+
+
+
+------> client -> 
+------------------------------------------------------------------------------------------------------------
+
+                            DS
+        Linear                              NonLinear 
+   Array                                        Tree  
+   Stack                                        Graph 
+   Queue 
+   LinkedList 
+
+
+searching 
+
+sorted 
+
+------------------------------------------------------------------------------------------------------------
+ sort -> 30 number 
+
+ input 30 -> 30 second  
+          -> 5  second  
+          -> 20 second 
+          -> 10 second 
+          -> 12 second
+          -> 15 second 
+          -> 18 second
+          -> 22 second  
+
+ W : 30  : Big O  O 
+ B : 5   : Omega 
+ A : X   : Theta 
+
+------------------------------------------------------------------------------------------------------------
+
+
+
+SIZE = 5
+
+for(i=0;i<SIZE;i++){
+    if(a[i] == search ){//0 1 2 3 4 
+        //found 
+        //break; 
+    }
+}
+
+10 20 30 40 50 
+10 
+5 times -> O(n)   
+
+
+
+
+size=20 
+for(i=1;i<=size;i++){
+    if(i%2==0){
+        i++;
+    }
+}
+
+1           1,2,4,6,8,10,12,14
+2           1,2,4,6,8,10,12,14,16,18,20     
+4
+6
+8
+10
+
+6 times 
+
+10->6  ::  O(n/2)+1   O(n/2)  ->  
+15->8
+20->11 
+------------------------------------------------------------------------------------------
+
+int a  = 10; 
+
+
+
+a = 20 ; 
+
+
+int a[] // more than 1 value 
+
+int a[5];  //a[0] a[1] a[2] a[3] a[4]
+
+
+//200 
+//204 
+//208 
+
+//index -> starts 0 , ends size -1 
+
+
+-------------------------------------------------------------------
+
+int a[SIZE] ;
+
+
+void insert(int location,int data){
+
+}
+
+void display(){
+
+}
+
+
+1 insert 
+2 display
+3 exit 
+
+
+insert(1,10); 
+
+insert(1,20); 
+
+insert(1,30); 
+
+insert(4,100);
+
+insert(2,200);
+
+
+insert(1,1000); 
