@@ -1,0 +1,171 @@
+user ---> computer ---->task ?? 
+
+
+binary -- 010101010101 
+
+
+eng -> T -> binary -> computer ->
+
+
+
+problem -> solution => program 
+
+
+
+why DS ? 
+
+**1) time complexity : execution time taken by your program
+2) space complexity : space/memory taken by your program 
+
+
+1 -> 2 numb -> 2 second -> 
+        facebook.com -> 
+                    1 lack ->  10milisecond  -> 
+
+
+DS ->  ALGO -> 
+
+ARMY -> 
+    gun --------->  
+    shoot gun 
+    machine gun ----->  
+    rifel 
+    bazooka  -----> 
+
+---------------------------------------------------------------------------------------------------------
+                                    DS 
+            LinearDS                               NonLinear 
+        Array Stack Queue LinkedList                 Tree , Graph  
+
+    search 
+
+    sort 
+
+---------------------------------------------------------------------------
+
+    Array -> collection of data 
+
+    int a = 10; 
+
+
+    a = 20; 
+
+    10
+    20 
+    
+    int a[10]; // collection of same type of data   
+                //it allocates memory in continuous manner 
+
+    //int -> 4 byte -> 40 byte
+
+    a[0] a[1] a[2] .... a[9]
+
+    index -> array can access via index  --> subscript 
+
+    a[0] -> 2000 
+
+    a[1] -> 2004 
+
+ 
+
+    int k; // 4byte  
+
+    int a[5];//4byte * 5  => 20 byte // 5 size 
+
+    //index -- subscript 
+
+    a[0] -> 2000 
+    a[1] -> 2004 
+    a[2]
+    a[3]
+    a[4] 
+
+    
+
+    int a[5]; 
+
+    insert(1,100); // 1st location , 100 
+
+    insert(1,200); //1st location, 200 
+
+    insert(1,300); 
+
+    insert(2,2000);
+
+    insert(5,5000);
+
+    insert(3,333);  
+
+    display();
+
+
+----------------------------------------------------------------------------
+
+STACK -> LIFO -> Last In First Out 
+
+app notification 
+ 
+whats app status 
+
+whats app msg 
+
+gallery 
+
+email 
+
+history 
+
+ctrl+z 
+
+
+ stack -> lib 
+    push 10 20 30 
+    pop 
+    display 30 20 10 
+
+
+
+take string from user and reverse it. [ stack ]
+
+
+o/p 
+    enter string 
+    royal 
+    str -> royal 
+    rev -> layor
+
+
+o/p 
+    enter string 
+    sir 
+    str -> sir 
+    rev -> ris 
+    
+
+
+
+
+#define SIZE 5
+int a[SIZE];
+
+
+void display(){
+
+    for(i=0;i<SIZE;i=i+2){//0 2 
+        printf("\n%d %d",a[i],a[i+1]);//10 20 30 40   
+    }
+}
+size 5  : n/2  
+size 7  : 4  
+size 10 : 5  
+
+O(n/2)
+
+
+------------------------------------------------------------------------------
+
+DS : -> queue 
+
+FiFo ->  first in first out 
+
+-------------------------------------------------------------------------
