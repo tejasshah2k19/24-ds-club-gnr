@@ -229,3 +229,41 @@ insertion sort ->
      5  10   21  17  6   -1  11  85  8
         i    
 -------------------------------------------------------------------------------
+
+
+bubble sort -> first --> last --> left : right and swap 
+
+selection sort -> left : right : smallest : select 
+
+insertion sort -> right : left 
+
+merge sort :->
+
+    0   1   2   3   4   
+a : 5   10  15  20  25 
+                        i
+
+    0   1   2   3   4
+b : 1   7   18  30  35 
+                        j
+
+a+b => c {size}
+
+    0   1   2   3   4   5   6   7   8   9   
+c : 1   5   7   10  15  18  20  25  30  35
+                                        k 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
