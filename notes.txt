@@ -271,6 +271,72 @@ c : 1   5   7   10  15  18  20  25  30  35
     10 15 20 35         7   
 
     7  10 15 20 35
+-------------------------------------------------------------------------------
+
+DMA 
+
+int main(){ 
+    int a; //a -> memory -> 4 byte 
+    //implicitly -> allocate 
+
+    int x[10]; // 40 byte -> 
+    //4 elements 6:free -> 24 byte
+
+    int x[10];//40 byte 
+    //15 elements  
+
+    // a -> no use 
+    //
+
+}
+//when 4 byte - release ? 
+
+DMA ? 
+
+pointer -> 
+
+
+    calloc() - allocate  - when we want to allocate same size of block n times 
+    malloc() - allocate  - when we want to allocate a block 
+    free()   - release 
+
+
+a -> 4 byte -> malloc 
+
+a[10] -> 4 byte , 10 qty -> calloc 
+
+stdlib.h 
+
+--------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
