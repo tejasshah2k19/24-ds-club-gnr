@@ -49,12 +49,38 @@ void addBeg(){
     p->next = head ; 
     head = p; 
 }
+
+
+void search(){
+    int key;
+    int found = 0 ;
+    struct  node *p; 
+    printf("\nEnter Search num") ;
+    scanf("%d",&key);//30 40 
+
+    p = head; 
+
+    while (p!=NULL)
+    {
+        if(p->rollNum == key){
+            found  = 1; 
+            break;
+        }
+        p = p->next;
+    }
+    
+    if(found == 1){
+        printf("\n%d Present",key);
+    }else{
+        printf("\n%d not PResent",key);
+    }
+}
 int main(){
 
     int choice;
 
     while(1){ 
-    printf("\n0 for exit\n1 For Add Student\n2 for List\n3 for Add Beg\nEnter choice");
+    printf("\n0 for exit\n1 For Add Student\n2 for List\n3 for Add Beg\n4 for search\nEnter choice");
     scanf("%d",&choice);
 
 
@@ -70,6 +96,9 @@ int main(){
             exit(0);
         case 3:
             addBeg();
+            break;
+        case 4:
+            search();
             break;
         
         default:
