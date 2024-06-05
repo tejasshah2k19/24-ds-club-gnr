@@ -308,6 +308,33 @@ a[10] -> 4 byte , 10 qty -> calloc
 stdlib.h 
 
 --------------------------------------------------------------------------------------
+Algo 
+
+
+        array : index  
+        stack : LiFo 
+        queue : FiFo 
+
+
+
+size 5 =>  2 use [3W]
+size 5 => 10 [5T]
+
+calloc 
+malloc 
+
+DS -> Algo -> 
+        1) add - runtime allocate 
+        2) order -> FiFo LiFo 
+
+
+LinkedList -> 
+        data -> 
+
+
+        node : memory allocate 
+
+        [data | address{nextNode} ]
 
 
 
