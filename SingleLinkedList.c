@@ -89,8 +89,8 @@ void search()
 void addAny()
 {
     int sourceRNum;
-    struct node *p; 
-    int found =0;
+    struct node *p;
+    int found = 0;
     printf("\nEnter Source Roll Num");
     scanf("%d", &sourceRNum);
 
@@ -112,16 +112,60 @@ void addAny()
 
         printf("\nEnter name and rollNUm");
         scanf("%s%d", &tmp->name, &tmp->rollNum);
-        
-        
-        tmp->next = p->next; 
-        p->next = tmp; 
-        
 
+        tmp->next = p->next;
+        p->next = tmp;
     }
     else
     {
         printf("\n%d not PResent", sourceRNum);
+    }
+}
+
+void removeBeg()
+{
+    if (head == NULL)
+    {
+        printf("\nList is Empty...");
+    }
+    else if (head == last)
+    {
+        last = NULL;
+        free(head);
+        head = NULL;
+    }
+    else
+    {
+        struct node *p = head;
+        head = head->next;
+        free(p);
+    }
+}
+
+void removeLast()
+{
+
+    struct node *p = head;
+    if (head == NULL)
+    {
+        printf("\nList is Empty...");
+    }
+    else if (last == head)
+    {
+        last = NULL;
+        free(head);
+        head = NULL;
+    }
+    else
+    {
+
+        while (p->next != last)
+        {
+            p = p->next;
+        }
+        p->next = NULL;
+        free(last);
+        last = p;
     }
 }
 
@@ -132,7 +176,8 @@ int main()
 
     while (1)
     {
-        printf("\n0 for exit\n1 For Add Student\n2 for List\n3 for Add Beg\n4 for search\n5 For Add Any\nEnter choice");
+        printf("\n0 for exit\n1 For Add Student\n2 for List\n3 for Add Beg\n4 for search\n5 For Add Any\n6 for deleteBeg");
+        printf("\n7 for remove last\nEnter choice");
         scanf("%d", &choice);
 
         switch (choice)
@@ -153,6 +198,12 @@ int main()
             break;
         case 5:
             addAny();
+            break;
+        case 6:
+            removeBeg();
+            break;
+        case 7:
+            removeLast();
             break;
 
         default:

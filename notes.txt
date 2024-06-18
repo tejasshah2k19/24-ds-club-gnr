@@ -337,7 +337,40 @@ LinkedList ->
         [data | address{nextNode} ]
 
 
+--------------------------------------------------------------------
 
+node sum = target => 
+--------------------------------------------------------------------
+
+
+linear -> array stack queue linked list 
+
+linear search 
+binary search 
+
+--------------------------------------------------------------------
+
+NonLinear DS ->     
+                    Tree 
+                    Graph 
+
+--------------------------------------------------------------------
+    data -> node {left|data|right }
+
+
+root , height ,level, left child , right child 
+parent node,child node, leaf node, 
+
+binary tree -> 
+binary search tree->    
+        1) binary tree {min:0 max:2}
+        2) small < parent => left 
+            big > parent => right 
+
+PRACT ->             
+
+--------------------------------------------------------------------
+node  ? 
 
 
 
