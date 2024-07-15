@@ -372,13 +372,21 @@ PRACT ->
 --------------------------------------------------------------------
 node  ? 
 
+base on root position order will be decide 
+
+InOrder   -> left-root-right  
+PreOrder  -> root-left-right 
+PostOrder -> left-right-root 
 
 
+InOrder -> left 
 
 
+----------------------------------------------------------------------
 
-
-
+sum of all nodes in tree 
+find max node from tree 
+----------------------------------------------------------------
 
 
 
