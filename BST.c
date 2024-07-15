@@ -80,19 +80,64 @@ int maxFind(struct node *root)
     return root->data;
 }
 
-int search(struct node *root,int key){
-    if(root == NULL){
+int search(struct node *root, int key)
+{
+    if (root == NULL)
+    {
         return 0;
     }
-    else if(root->data == key){
+    else if (root->data == key)
+    {
         return 1;
-    }else if(key > root->data){
-        return search(root->right,key);
-    }else{
-        return search(root->left,key);
-    } 
+    }
+    else if (key > root->data)
+    {
+        return search(root->right, key);
+    }
+    else
+    {
+        return search(root->left, key);
+    }
 }
 
+struct node *removeNode(struct node *root, int key)
+{
+    if (root == NULL)
+    {
+        return root;
+    }
+    else if (root->data == key) // 55
+    {
+        // delete
+        // sc 1 : leaf node : 0 child
+        printf("\nNode Found");
+        if(root->left == NULL && root->right == NULL){
+            printf("\nDeleting LEAF node");
+            free(root);
+            return NULL;
+        }
+
+    }
+    else if (key > root->data)
+    {
+        // right
+        root->right = removeNode(root->right, key);
+        return root;
+    }
+    else if (key < root->data)
+    {
+        // left
+        root->left = removeNode(root->left, key);
+        return root;
+    }
+    // key:55 -> root->data ==  key -> same -> delete
+
+    // key > root->data
+    // right
+
+    // key < root->data
+    // left
+}
 int main()
 {
 
@@ -112,11 +157,11 @@ int main()
     // max node from tree
     printf("\nMAX = %d", maxFind(root));
 
-    printf("\n25 => %d", search(root, 25));  //->1 found
+    printf("\n25 => %d", search(root, 25));   //->1 found
     printf("\n222 => %d", search(root, 222)); //->0 not found
-    
-    removeNode(root,55);
 
-     inOrder(root);
+    removeNode(root, 30);
+
+    inOrder(root);
     return 0;
 }
